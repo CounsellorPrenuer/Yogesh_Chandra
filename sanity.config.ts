@@ -1,6 +1,6 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
-import { schemaTypes } from './schema'
+import { schemaTypes } from './src/sanity/schema'
 
 export default defineConfig({
   basePath: '/studio',
