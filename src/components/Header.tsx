@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+import logoImg from '../../public/images/logo.jpg'
+
 export default function Header() {
   return (
     <header className="fixed w-full bg-white shadow-sm z-50">
@@ -8,7 +10,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0 flex items-center">
             <Link href="#home" className="flex items-center">
-              <Image src="/images/logo.jpg" alt="careerAI Logo" width={240} height={80} className="object-contain h-20 w-auto" priority />
+              <Image src={logoImg} alt="careerAI Logo" width={240} height={80} className="object-contain h-20 w-auto" priority />
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
